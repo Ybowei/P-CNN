@@ -5,7 +5,7 @@ P-CNN : Prototype-CNN for Few-Shot Object Detection in Remote Sensing Images
 
 Gong Cheng, Bowei Yan, Peizhen Shi, Ke Li, Xiwen Yao, Lei Guo, and Junwei Han
 
-
+<p align=center><img width="80%" src="metarcnn.png"/></p>
 
 ### License
 
