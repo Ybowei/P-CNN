@@ -45,4 +45,29 @@ For Academic Research Use Only!
 
 ### Getting Started
 
-Code will be made publicly available soon.
+Clone the repo:
+
+
+    https://https://github.com/Ybowei/P-CNN.git
+
+
+
+### Compilation
+
+Compile the CUDA dependencies:
+
+
+    cd {repo_root}/lib
+    sh make.sh
+
+
+It will compile all the modules you need, including NMS, ROI_Pooing, ROI_Crop and ROI_Align
+
+
+### Data Preparation
+
+create a data folder under the repo,
+
+    cd {repo_root}
+    mkdir data
+    
