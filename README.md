@@ -105,8 +105,7 @@ $>CUDA_VISIBLE_DEVICES=0 python train_pcnn.py --dataset dior --epochs 30 --bs 4 
 if you want to evaluate the performance of meta trained model, simply run:
 ```sh
 $>CUDA_VISIBLE_DEVICES=0 python test_pcnn.py --dataset dior --net Prototypecnn --load_dir models/meta/first  --checksession 3 --checkepoch 29 --checkpoint 78 --shots 3  --meta_type 1 --meta_test True --meta_loss True --phase 2
-
-
+```
 
 ### Citation
 
