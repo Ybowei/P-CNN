@@ -84,7 +84,7 @@ create a data folder under the repo,
 After downloading the data, create softlinks in the folder data/.
 
 
-please put the four base classes [splits]() into DIOR ImageSets/Main dirs.
+please put the four base classes [splits](https://github.com/Ybowei/P-CNN/tree/main/split) into DIOR ImageSets/Main dirs.
 
 
 ### Training
