@@ -1,0 +1,74 @@
+EXP_DIR: res101
+TRAIN:
+  HAS_RPN: True
+  BBOX_NORMALIZE_TARGETS_PRECOMPUTED: True
+  RPN_POSITIVE_OVERLAP: 0.7
+  RPN_BATCHSIZE: 256
+  PROPOSAL_METHOD: gt
+  BG_THRESH_LO: 0.0
+  DISPLAY: 20
+  BATCH_SIZE: 128
+  WEIGHT_DECAY: 0.0001
+  MAX_SIZE: 1000
+  SCALES: [600]
+  DOUBLE_BIAS: False
+  RCNN_BBOX_WEIGHT: 1
+
+  # 15 Base classes + 5 Novel classes
+
+  ALLCLASSES_FIRST: [ 'airplane', 'airport', 'dam', 'Expressway-Service-area', 'Expressway-toll-station',
+                      'harbor', 'golffield',  'groundtrackfield', 'overpass', 'stadium', 
+                      'storagetank', 'tenniscourt', 'trainstation', 'vehicle', 'windmill',
+                      'baseballfield', 'basketballcourt', 'bridge', 'chimney', 'ship']
+
+  BASECLASSES_FIRST: ['airplane', 'airport', 'dam', 'Expressway-Service-area', 'Expressway-toll-station',
+                      'harbor', 'golffield',  'groundtrackfield', 'overpass', 'stadium', 
+                      'storagetank', 'tenniscourt', 'trainstation', 'vehicle', 'windmill']
+
+  
+  ALLCLASSES_SECOND: ['baseballfield', 'basketballcourt', 'bridge', 'chimney', 'dam', 
+                      'Expressway-Service-area', 'golffield', 'overpass', 'ship', 'stadium',
+                      'storagetank', 'tenniscourt', 'trainstation', 'vehicle', 'windmill',
+                      'airplane', 'airport', 'Expressway-toll-station', 'harbor', 'groundtrackfield']
+
+  BASECLASSES_SECOND: ['baseballfield', 'basketballcourt', 'bridge', 'chimney', 'dam', 
+                      'Expressway-Service-area', 'golffield', 'overpass', 'ship', 'stadium',
+                      'storagetank', 'tenniscourt', 'trainstation', 'vehicle', 'windmill']
+
+  ALLCLASSES_THIRD: ['airplane', 'airport', 'baseballfield', 'basketballcourt', 'bridge', 
+                     'chimney', 'Expressway-Service-area', 'Expressway-toll-station',  'harbor','groundtrackfield', 
+                     'overpass', 'ship', 'stadium', 'trainstation', 'windmill',
+                     'dam', 'golffield', 'storagetank', 'tenniscourt', 'vehicle']
+
+  BASECLASSES_THIRD: ['airplane', 'airport', 'baseballfield', 'basketballcourt', 'bridge', 
+                     'chimney', 'Expressway-Service-area', 'Expressway-toll-station',  'harbor','groundtrackfield', 
+                     'overpass', 'ship', 'stadium', 'trainstation', 'windmill',]
+
+  ALLCLASSES_FOURTH: ['airplane', 'airport','baseballfield', 'basketballcourt', 'bridge', 
+                      'chimney', 'dam', 'Expressway-toll-station',  'harbor', 'golffield',  
+                      'groundtrackfield', 'ship','storagetank', 'tenniscourt', 'vehicle', 
+                      'Expressway-Service-area', 'overpass', 'stadium', 'trainstation', 'windmill']
+
+  BASECLASSES_FOURTH: ['airplane', 'airport','baseballfield', 'basketballcourt', 'bridge', 
+                      'chimney', 'dam', 'Expressway-toll-station',  'harbor', 'golffield',  
+                      'groundtrackfield', 'ship','storagetank', 'tenniscourt', 'vehicle']
+
+  ALLCLASSES_FSODM: [ 'airport', 'basketballcourt', 'bridge', 'chimney', 'dam', 
+                      'Expressway-Service-area', 'Expressway-toll-station',  'harbor', 'golffield',  'groundtrackfield', 
+                      'overpass', 'ship', 'stadium', 'storagetank', 'vehicle', 
+                      'airplane', 'baseballfield', 'tenniscourt', 'trainstation', 'windmill']
+
+  BASECLASSES_FSODM: ['airport', 'basketballcourt', 'bridge', 'chimney', 'dam', 
+                      'Expressway-Service-area', 'Expressway-toll-station',  'harbor', 'golffield',  'groundtrackfield', 
+                      'overpass', 'ship', 'stadium', 'storagetank', 'vehicle']
+  USE_META_HEAD: True
+TEST:
+  SCALES: [600]
+  HAS_RPN: True
+POOLING_SIZE: 7
+POOLING_MODE: align
+CROP_RESIZE_WITH_MAX_POOL: False
+
+mask_on: True #True  False
+RPN_Attention: True 
+Test_Subdataset: False
