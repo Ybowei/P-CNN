@@ -1,7 +1,7 @@
 ## P-CNN : Prototype-CNN for Few-Shot Object Detection in Remote Sensing Images
 Code for reproducing the results in the following paper, and the code is built on top of [MetaR-CNN](https://github.com/yanxp/MetaR-CNN)
 
-P-CNN : Prototype-CNN for Few-Shot Object Detection in Remote Sensing Images
+[P-CNN : Prototype-CNN for Few-Shot Object Detection in Remote Sensing Images](https://ieeexplore.ieee.org/document/9435769)
 
 Gong Cheng, Bowei Yan, Peizhen Shi, Ke Li, Xiwen Yao, Lei Guo, and Junwei Han
 
