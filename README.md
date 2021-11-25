@@ -56,7 +56,7 @@ Tested on Ubuntu 16.04 with a Titan X GPU (12G)
 Clone the repo:
 
 
-    https://https://github.com/Ybowei/P-CNN.git
+    https://github.com/Ybowei/P-CNN.git
 
 
 ### Compilation
