@@ -59,7 +59,7 @@ class _fasterRCNN(nn.Module):
         if self.meta_train and self.training:
             prn_data = im_data_list[0]  # len(metaclass)*4*224*224
             # feed prn data to prn_network
-            attentions = self.prn_network(prn_data) # 将support set中的图像中的每个类别求特征向量，然后用sigmoid进行归一化
+            attentions = self.prn_network(prn_data)
             prn_cls = im_info_list[0]  # len(metaclass)
 
         im_data = im_data_list[-1]
