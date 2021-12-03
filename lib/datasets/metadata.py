@@ -163,11 +163,11 @@ class DiorMetaDataset(data.Dataset):
 
         self.prndata = []
         self.prncls = []
-        prn_image, prn_mask = self.get_prndata() # 关于metaclass的类别，从image_set中每个类别任意选取shots张图像并产生相应的mask标签。
+        prn_image, prn_mask = self.get_prndata() 
         for i in range(shots):
             cls = []
             data = []
-            for n, key in enumerate(list(prn_image.keys())): # 每个类别1shot的包装到data和cls列表中去。
+            for n, key in enumerate(list(prn_image.keys())): 
                 img = torch.from_numpy(np.array(prn_image[key][i]))
                 img = img.unsqueeze(0)
                 mask = torch.from_numpy(np.array(prn_mask[key][i]))
