@@ -79,7 +79,7 @@ def filter_class_roidb(roidb, shot, imdb):
     rdb_flipped = roidb[idx + length]
     for i in range(len(rdb['gt_classes'])):
       cls_id = rdb['gt_classes'][i]
-      if class_count[cls_id] < shot and cls_id > 15: # novel class的编号都是大于15的
+      if class_count[cls_id] < shot and cls_id > 15: 
         boxes.append(rdb['boxes'][i])
         gt_classes.append(rdb['gt_classes'][i])
         gt_overlaps.append(rdb['gt_overlaps'][i])
@@ -93,7 +93,7 @@ def filter_class_roidb(roidb, shot, imdb):
         max_overlaps_flipped.append(rdb_flipped['max_overlaps'][i])
         class_count[cls_id] += 1
 
-      elif cls_id <= 15: # 基类样本的数量是新类的3倍
+      elif cls_id <= 15: 
         boxes.append(rdb['boxes'][i])
         gt_classes.append(rdb['gt_classes'][i])
         gt_overlaps.append(rdb['gt_overlaps'][i])
